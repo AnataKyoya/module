@@ -4,84 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Era Digital</title>
-    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1 class="logo">Era Digital</h1>
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu-toggle"></div>
-            </div>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="container">
-            <h1>Embrace the Digital Era</h1>
-            <p>Discover limitless possibilities.</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+    <main>
+        <div class="side-bar hide">
+            <a href="">gallery</a>
+            <a href="#jobs">jobs</a>
+            <a href="#contact">contact</a>
+            <a href="">about</a>
         </div>
-    </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ipsum eu elit consectetur accumsan.
-                Nulla consequat diam leo, a aliquam lectus scelerisque id. Proin interdum fringilla sem nec rhoncus.</p>
-        </div>
-    </section>
+        <header>
+            <div class="nav">
+                <div class="kiri">
+                    <h1 class="logo">team</h1>
+                </div>
 
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service">
-                    <img src="service1.jpg" alt="Service 1">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="kanan">
+                    <a href="" class="href">gallery</a>
+                    <a href="#jobs" class="href">jobs</a>
+                    <a href="#contact" class="href">contact</a>
+                    <a href="" class="href">about</a>
                 </div>
-                <div class="service">
-                    <img src="service2.jpg" alt="Service 2">
-                    <h3>Mobile App Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service">
-                    <img src="service3.jpg" alt="Service 3">
-                    <h3>Digital Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                <div class="buka-sb open">
+                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-x'></i>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="submit-form.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+        <section class="same">
+            <div class="slides">
+                <div class="container">
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Era Digital. All rights reserved.</p>
-        </div>
-    </footer>
+                    <!-- https://unsplash.com/photos/i1VQZsU86ok -->
+                    <img src="2.jpg" alt="" class="img first">
 
-    <script src="script.js"></script>
+                    <!-- https://unsplash.com/photos/pl9DrjAMV6I -->
+                    <img src="3.jpg" alt="" class="img">
+
+                    <!-- punya sendiri -->
+                    <img src="4.jpg" alt="" class="img">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="same" id="jobs">
+            <!-- https://unsplash.com/photos/DtDlVpy-vvQ -->
+            <img src="1.jpg" alt="" class="wall">
+            <div class="isi-jobs">
+                <div class="title">jobs</div>
+                <div class="job">
+
+                    <div class="job-satu">
+                        <div class="img-js">
+                            <!-- https://unsplash.com/photos/i1VQZsU86ok -->
+                            <img src="2.jpg" alt="">
+                        </div>
+                        <h2 class="nama-job">web design</h2>
+                        <p class="ket-job">selengkapnya</p>
+                    </div>
+
+                    <div class="job-dua">
+                        <div class="img-js">
+                            <!-- punya sendiri -->
+                            <img src="4.jpg" alt="">
+                        </div>
+                        <h2 class="nama-job">poster</h2>
+                        <p class="ket-job">selengkapnya</p>
+                    </div>
+
+                    <div class="job-tiga">
+                        <div class="img-js">
+                            <!-- https://unsplash.com/photos/pl9DrjAMV6I -->
+                            <img src="3.jpg" alt="">
+                        </div>
+                        <h2 class="nama-job">ui/ux</h2>
+                        <p class="ket-job">selengkapnya</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="same" id="contact">
+
+            <div class="feedback">
+                <form action="" method="post">
+                    <input type="email" name="email" id="email">
+                    <input type="text" name="nama-user" id="nama-user">
+                    <input type="text" name="isi" id="isi">
+                    <input type="submit" value="KIRIM" class="btn">
+                    <div class="hapus btn">
+                        <p>hapus</p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="maps">
+                <div class="map"></div>
+                <p>telp : 0812-3456-7910</p>
+                <p>email : example@gmail.com</p>
+            </div>
+
+        </section>
+
+        <footer>
+            copyright &copy; nama tim
+        </footer>
+    </main>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 
 </html>
