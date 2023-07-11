@@ -133,4 +133,8 @@ img {
     .logo {
         font-size: 1.5em;
     }
+
+    .same {
+        height: 10vw;
+    }
 }
